@@ -8,18 +8,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="teamkevinlove.com.wififinder.MainActivity"
-    android:background="@drawable/bg_gradient"
+    android:background="#ffffff"
     android:clickable="true">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wifi Finder"
+        android:text="PERFECTA"
+        android:typeface="serif"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:textSize="50sp"
-        android:textColor="#ffffffff"
+        android:textColor="#0b76bc"
         android:id="@+id/textView" />
 
     <Button
@@ -30,7 +31,7 @@
         android:layout_marginBottom="66dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#40ffffff"
+        android:background="#0b76bc"
         android:textSize="30sp"
         android:textColor="#ffffff" />
 
@@ -41,13 +42,46 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/wifi"
-        android:layout_centerVertical="true"
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:text="TEST APPLICATION"
+        android:typeface="serif"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:tint="#bdffffff" />
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="#0b76bc"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/celltower"
+        android:backgroundTint="#0b76bc"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/location"
+        android:backgroundTint="#0b76bc"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/wifi"
+        android:backgroundTint="#0b76bc"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 
 </RelativeLayout>
