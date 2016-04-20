@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onLocationChanged(Location location) {
                 textView.setText("LOCATION:");
                 textView.append(" " + location.getLongitude() + " " +location.getLatitude());
+                mProgressBar.setVisibility(View.INVISIBLE);
             }
 
             @Override
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 locationManager.requestLocationUpdates(locationManager.NETWORK_PROVIDER, 30000, 5, locationListener);
                 textView.setText("LOCATION:");
                 locationManager.requestLocationUpdates("gps", 20000, 5, locationListener);
-                mProgressBar.setVisibility(View.INVISIBLE);
+
 
             }
         });
