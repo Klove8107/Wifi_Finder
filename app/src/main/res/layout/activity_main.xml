@@ -11,6 +11,16 @@
     android:background="#ffffff"
     android:clickable="true">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/unnamed"
+        android:background="#ffffff"
+        android:backgroundTint="#ffffff" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,14 +67,16 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:text="LOCATION:"
         android:id="@+id/locationView"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
         android:textSize="15sp"
         android:textColor="#2fff00"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp" />
 
     <ListView
         android:layout_width="wrap_content"
@@ -73,12 +85,5 @@
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/searchButton"
         android:layout_below="@+id/locationView" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_alignTop="@+id/listView"
-        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
